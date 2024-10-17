@@ -10,10 +10,9 @@
         <right-circle-outlined />
       </div>
     </template>
-    <div><h3>1</h3></div>
-    <div><h3>2</h3></div>
-    <div><h3>3</h3></div>
-    <div><h3>4</h3></div>
+    <div><img src="@/assets/B1.png" class="w-full" /></div>
+    <div><img src="@/assets/B2.png" class="w-full" /></div>
+    <div><img src="@/assets/B3.png" class="w-full" /></div>
   </a-carousel>
 </template>
 <script setup lang="ts">
@@ -22,7 +21,7 @@ import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue'
 <style scoped>
 .ant-carousel :deep(.slick-slide) {
   text-align: center;
-  height: 160px;
+  /* height: 160px; */
   line-height: 160px;
   background: #364d79;
   overflow: hidden;
@@ -45,5 +44,23 @@ import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue'
 
 .ant-carousel :deep(.slick-slide h3) {
   color: #fff;
+}
+
+@media (max-width: 1740px) {
+  img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1440px) {
+  img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 800px) {
+  img {
+    height: 250px;
+  }
 }
 </style>
