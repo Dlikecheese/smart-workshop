@@ -35,9 +35,4 @@
 <script setup lang="ts">
 import FileSearchOutlined from '@ant-design/icons-vue/FileSearchOutlined'
 </script>
-<style scoped>
-img {
-  width: 300px;
-  height: 170px;
-}
-</style>
+<style scoped></style>
