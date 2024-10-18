@@ -115,11 +115,8 @@ p {
 }
 </style>
 <script setup lang="ts">
-// 获取路由参数type
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 const type = ref(router.currentRoute.value.query.type)
-console.log(type)
-// 声明双向绑定变量 type
 </script>
