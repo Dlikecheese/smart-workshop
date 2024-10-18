@@ -1,7 +1,9 @@
 <template>
   <Header class="absolute z-20 w-full" />
   <Banner />
-  <Content />
+  <div class="m-20">
+    <Content />
+  </div>
 </template>
 <script setup lang="ts">
 import Header from '../components/Header.vue'
