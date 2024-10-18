@@ -5,7 +5,7 @@
         <div class="flex items-center gap-1 text-xl">
           <VideoCameraTwoTone class="text-blue-500" /><span>工坊实景课堂</span>
         </div>
-        <div class="text-blue-500">更多 -></div>
+        <div class="text-blue-500 cursor-pointer">更多 -></div>
       </div>
     </header>
 
@@ -30,7 +30,10 @@
         <span>仓储货物</span>
       </div>
 
-      <div class="flex flex-col items-center gap-2">
+      <div
+        class="flex flex-col items-center gap-2 cursor-pointer"
+        v-on:click="onClick"
+      >
         <img src="@/assets/course/5.png" alt="" />
         <span>数字车间</span>
       </div>
@@ -44,5 +47,10 @@
 </template>
 <script setup lang="ts">
 import VideoCameraTwoTone from '@ant-design/icons-vue/VideoCameraTwoTone'
+import router from '@/router'
+
+const onClick = () => {
+  router.push({ path: '/detail', query: { type: 'course' } })
+}
 </script>
 <style scoped></style>

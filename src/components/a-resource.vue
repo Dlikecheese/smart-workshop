@@ -7,7 +7,7 @@
             >校企共建资源库</span
           >
         </div>
-        <div class="text-blue-500">更多 -></div>
+        <div class="text-blue-500 cursor-pointer">更多 -></div>
       </div>
     </header>
 

@@ -5,7 +5,7 @@
         <div class="flex items-center gap-1 text-xl">
           <FileSearchOutlined class="text-blue-500" /><span>工坊数字教材</span>
         </div>
-        <div class="text-blue-500">更多 -></div>
+        <div class="text-blue-500 cursor-pointer">更多 -></div>
       </div>
     </header>
 

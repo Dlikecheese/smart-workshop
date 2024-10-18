@@ -20,7 +20,7 @@
         <div class="flex items-center gap-1 text-xl">
           <TeamOutlined class="text-blue-500" /><span>工坊教师团队</span>
         </div>
-        <div class="text-blue-500">更多 -></div>
+        <div class="text-blue-500 cursor-pointer">更多 -></div>
       </div>
 
       <div class="mt-4">
@@ -44,7 +44,12 @@
       >
         <a-avatar :size="100">
           <template #icon>
-            <img :src="member.avatar" alt="" />
+            <img
+              :src="member.avatar"
+              alt=""
+              class="cursor-pointer"
+              v-on:click="onClick"
+            />
           </template>
         </a-avatar>
         <span>{{ member.name }}</span>
@@ -81,6 +86,7 @@ import p5 from '@/assets/person/p5.png'
 import p6 from '@/assets/person/p6.png'
 import p7 from '@/assets/person/p7.png'
 import p8 from '@/assets/person/p8.png'
+import router from '@/router'
 
 const members = ref([
   { name: '马万千', avatar: p1 },
@@ -92,5 +98,9 @@ const members = ref([
   { name: '陈道辉', avatar: p7 },
   { name: '朱青松', avatar: p8 },
 ])
+
+const onClick = () => {
+  router.push({ path: '/detail', query: { type: 'person' } })
+}
 </script>
 <style scoped></style>
