@@ -1,9 +1,9 @@
 <template>
-  <div class="border-2 border-slate-200 m-8 rounded-3xl p-8 shadow">
+  <div class="border-2 bg-white border-slate-200 rounded-3xl p-8 shadow">
     <header class="w-full mb-4">
       <div class="flex justify-between w-full items-center">
-        <div class="flex items-center gap-1 text-xl">
-          <MergeCellsOutlined class="text-blue-500" /><span
+        <div class="flex items-end gap-1 text-xl">
+          <MergeCellsOutlined class="text-blue-500 text-2xl" /><span
             >校企共建资源库</span
           >
         </div>
