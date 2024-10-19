@@ -32,13 +32,14 @@
         <span>仓储货物</span>
       </div>
 
-      <div
+      <a
         class="flex flex-col items-center gap-2 cursor-pointer"
-        v-on:click="onClick"
+        href="https://www.720yun.com/vr/a93jzswOuO1"
+        target="_blank"
       >
         <img src="@/assets/course/5.png" alt="" />
         <span>数字车间</span>
-      </div>
+      </a>
 
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/6.png" alt="" />
@@ -49,10 +50,5 @@
 </template>
 <script setup lang="ts">
 import VideoCameraTwoTone from '@ant-design/icons-vue/VideoCameraTwoTone'
-import router from '@/router'
-
-const onClick = () => {
-  router.push({ path: '/detail', query: { type: 'course' } })
-}
 </script>
 <style scoped></style>

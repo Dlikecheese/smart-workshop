@@ -12,25 +12,41 @@
     </header>
 
     <div class="flex justify-between gap-2">
-      <div class="flex flex-col items-center gap-2">
+      <a
+        class="flex flex-col items-center gap-2 cursor-pointer"
+        href="https://czlgj.fy.chaoxing.com/portal/"
+        target="_blank"
+      >
         <img src="@/assets/resource/1.png" alt="" />
         <span>教学云</span>
-      </div>
+      </a>
 
-      <div class="flex flex-col items-center gap-2">
+      <a
+        class="flex flex-col items-center gap-2 cursor-pointer"
+        href="http://124.221.240.160:8891/"
+        target="_blank"
+      >
         <img src="@/assets/resource/2.png" alt="" />
         <span>企业云</span>
-      </div>
+      </a>
 
-      <div class="flex flex-col items-center gap-2">
+      <a
+        class="flex flex-col items-center gap-2 cursor-pointer"
+        href="http://101.35.221.158:8000/SysModules/Login/Login.aspx"
+        target="_blank"
+      >
         <img src="@/assets/resource/3.png" alt="" />
         <span>工业云</span>
-      </div>
+      </a>
 
-      <div class="flex flex-col items-center gap-2">
+      <a
+        class="flex flex-col items-center gap-2 cursor-pointer"
+        href="https://wuqiyang312.github.io/ai-pages/"
+        target="_blank"
+      >
         <img src="@/assets/resource/4.png" alt="" />
         <span>工具云</span>
-      </div>
+      </a>
     </div>
   </div>
 </template>

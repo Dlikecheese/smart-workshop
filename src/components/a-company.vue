@@ -11,7 +11,7 @@
       </div>
     </header>
 
-    <div class="flex justify-between gap-2">
+    <div class="flex justify-between gap-2 mb-4">
       <div class="flex flex-col items-center gap-2 cursor-pointer">
         <img src="@/assets/company/1.png" alt="" />
         <span>智慧大棚环境监测</span>
@@ -26,7 +26,9 @@
         <img src="@/assets/company/3.png" alt="" />
         <span>智慧交通车辆监管</span>
       </div>
+    </div>
 
+    <div class="flex justify-between gap-2">
       <div class="flex flex-col items-center gap-2 cursor-pointer">
         <img src="@/assets/company/4.png" alt="" />
         <span>智慧仓储货物配送</span>
@@ -36,13 +38,13 @@
         class="flex flex-col items-center gap-2 cursor-pointer"
         v-on:click="onClick"
       >
-        <img src="@/assets/company/5.png" alt="" />
+        <img src="@/assets/company/chejian.png" alt="" />
         <span>数字车间集控平台搭建</span>
       </div>
 
       <div class="flex flex-col items-center gap-2 cursor-pointer">
-        <img src="@/assets/company/6.png" alt="" />
-        <span>智慧工厂综合管理系统搭建</span>
+        <img src="@/assets/company/gongchang.png" alt="" />
+        <span>智慧工厂管理平台搭建</span>
       </div>
     </div>
   </div>
