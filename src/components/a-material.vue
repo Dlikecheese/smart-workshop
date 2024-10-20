@@ -4,6 +4,7 @@
       <div class="flex justify-between w-full items-center">
         <div class="flex items-end gap-1 text-xl">
           <FileSearchOutlined class="text-blue-500 text-2xl" /><span
+            class="text-xl font-bold"
             >工坊数字教材</span
           >
         </div>
@@ -21,6 +22,12 @@
       </div>
 
       <div class="flex flex-col items-center gap-2">
+        <a href="https://www.lessonplan.cn/" target="_blank">
+          <img src="@/assets/material/b6.png" alt="" />
+        </a>
+      </div>
+
+      <div class="flex flex-col items-center gap-2">
         <img src="@/assets/material/b3.png" alt="" />
       </div>
 
@@ -29,9 +36,6 @@
       </div>
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/material/b5.png" alt="" />
-      </div>
-      <div class="flex flex-col items-center gap-2">
-        <img src="@/assets/material/b6.png" alt="" />
       </div>
     </div>
   </div>

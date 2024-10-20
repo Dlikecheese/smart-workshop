@@ -1,7 +1,7 @@
 <template>
-  <a-carousel arrows autoplay="true">
+  <a-carousel arrows>
     <template #prevArrow>
-      <div class="custom-slick-arrow" style="left: 10px; zindex: 1">
+      <div class="custom-slick-arrow" style="left: 10px; z-index: 1">
         <left-circle-outlined />
       </div>
     </template>
@@ -10,9 +10,17 @@
         <right-circle-outlined />
       </div>
     </template>
-    <div><img src="@/assets/banner/b1.png" class="w-full" /></div>
-    <div><img src="@/assets/banner/b2.png" class="w-full" /></div>
-    <div><img src="@/assets/banner/b3.png" class="w-full" /></div>
+    <div class="img img1">
+      <span class="mr-4">云智启航</span> <span class="mr-10">工坊筑梦</span>
+    </div>
+    <div class="img img2">
+      <span class="mt-10 inline-block">
+        <span class="mr-4">云智工坊</span> <span>引领未来</span></span
+      >
+    </div>
+    <div class="img img3">
+      <span class="mr-4">产教联合</span> <span>共育新才</span>
+    </div>
   </a-carousel>
 </template>
 <script setup lang="ts">
@@ -46,21 +54,33 @@ import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue'
   color: #fff;
 }
 
-@media (max-width: 1740px) {
-  img {
-    height: 500px;
-  }
+.img {
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  line-height: 500px;
+  letter-spacing: 20px;
+  font-weight: 800;
 }
 
-@media (max-width: 1440px) {
-  img {
-    height: 450px;
-  }
+.img1 {
+  background-image: url(@/assets/banner/1.png);
+  background-size: cover;
+  background-position: 20px;
+  text-align: end;
 }
 
-@media (max-width: 800px) {
-  img {
-    height: 250px;
-  }
+.img2 {
+  background-image: url(@/assets/banner/2.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.img3 {
+  background-image: url(@/assets/banner/3.png);
+  background-size: cover;
+  background-position: center;
 }
 </style>

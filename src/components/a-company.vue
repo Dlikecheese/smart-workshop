@@ -1,9 +1,10 @@
 <template>
-  <div class="border-2 bg-white border-slate-200 rounded-3xl p-8 shadow">
+  <div class="border-2 bg-white border-slate-200 rounded-3xl p-8 shadow card">
     <header class="w-full mb-4">
       <div class="flex justify-between w-full items-center">
         <div class="flex items-end gap-1 text-xl">
           <StarOutlined class="text-blue-500 text-2xl" /><span
+            class="text-xl font-bold"
             >企业典型项目</span
           >
         </div>
@@ -50,11 +51,10 @@
   </div>
 </template>
 <script setup lang="ts">
-import router from '@/router'
 import StarOutlined from '@ant-design/icons-vue/StarOutlined'
 
 const onClick = () => {
-  router.push({ path: '/detail', query: { type: 'company' } })
+  window.open(window.location.href + 'detail?type=company')
 }
 </script>
 <style scoped>
@@ -62,5 +62,9 @@ const onClick = () => {
   img {
     width: 500px;
   }
+}
+
+.card {
+  background-color: #e6eaf4;
 }
 </style>

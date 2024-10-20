@@ -4,6 +4,7 @@
       <div class="flex justify-between w-full items-center">
         <div class="flex items-end gap-1 text-xl">
           <VideoCameraTwoTone class="text-blue-500 text-2xl" /><span
+            class="text-xl font-bold"
             >工坊实景课堂</span
           >
         </div>
@@ -11,7 +12,7 @@
       </div>
     </header>
 
-    <div class="flex justify-between gap-2">
+    <div class="flex justify-between gap-2 mb-4">
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/1.png" alt="" />
         <span>农业大棚</span>
@@ -26,7 +27,9 @@
         <img src="@/assets/course/3.png" alt="" />
         <span>交通车辆</span>
       </div>
+    </div>
 
+    <div class="flex justify-between gap-2">
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/4.png" alt="" />
         <span>仓储货物</span>
@@ -51,4 +54,10 @@
 <script setup lang="ts">
 import VideoCameraTwoTone from '@ant-design/icons-vue/VideoCameraTwoTone'
 </script>
-<style scoped></style>
+<style scoped>
+@media (min-width: 1455px) {
+  img {
+    width: 500px;
+  }
+}
+</style>

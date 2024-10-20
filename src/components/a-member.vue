@@ -4,6 +4,7 @@
       <div class="flex justify-between w-full items-center">
         <div class="flex items-end gap-1 text-xl">
           <TeamOutlined class="text-blue-500 text-2xl" /><span
+            class="text-xl font-bold"
             >工坊技术团队</span
           >
         </div>
@@ -60,13 +61,10 @@ import p3 from '@/assets/person/p3.png'
 import p4 from '@/assets/person/p4.png'
 import p5 from '@/assets/person/liu.png'
 import p6 from '@/assets/person/p5.png'
-import p7 from '@/assets/person/p7.png'
 import huang from '@/assets/person/huangxiujuan.png'
 import zhang from '@/assets/person/zhangjun.png'
 import cao from '@/assets/person/caokang.png'
 import yin from '@/assets/person/yincunju.png'
-
-import router from '@/router'
 
 const size = ref('company')
 
@@ -79,7 +77,7 @@ const members = ref([
 
 const onClick = (member: { name: string }) => {
   if (member.name === '刘天宋') {
-    router.push({ path: '/detail', query: { type: 'person' } })
+    window.open(window.location.href + 'detail?type=person')
   }
 }
 

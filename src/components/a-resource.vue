@@ -1,9 +1,10 @@
 <template>
-  <div class="border-2 bg-white border-slate-200 rounded-3xl p-8 shadow">
+  <div class="border-2 bg-white border-slate-200 rounded-3xl p-8 shadow card">
     <header class="w-full mb-4">
       <div class="flex justify-between w-full items-center">
         <div class="flex items-end gap-1 text-xl">
           <MergeCellsOutlined class="text-blue-500 text-2xl" /><span
+            class="text-xl font-bold"
             >校企共建资源库</span
           >
         </div>
@@ -53,4 +54,8 @@
 <script setup lang="ts">
 import MergeCellsOutlined from '@ant-design/icons-vue/MergeCellsOutlined'
 </script>
-<style scoped></style>
+<style scoped>
+.card {
+  background-color: #e6eaf4;
+}
+</style>
