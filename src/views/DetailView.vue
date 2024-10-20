@@ -40,7 +40,7 @@
       </div>
 
       <div v-if="type === 'company'">
-        <p class="text-center text-2xl mb-4">项目：数字车间集控平台搭建</p>
+        <p class="text-center text-2xl mb-4">数字车间集控平台搭建</p>
         <div class="leading-6">
           <p class="mb-4">一、项目背景</p>
           <div class="indent-8 mb-4">

@@ -57,4 +57,10 @@ const onClick = () => {
   router.push({ path: '/detail', query: { type: 'company' } })
 }
 </script>
-<style scoped></style>
+<style scoped>
+@media (min-width: 1455px) {
+  img {
+    width: 500px;
+  }
+}
+</style>

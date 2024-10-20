@@ -45,6 +45,25 @@ section {
   background-color: #d9e7fd;
 }
 
+@media (min-width: 900px) {
+  section {
+    padding: 40px 120px;
+  }
+}
+
+@media (min-width: 1600px) {
+  section {
+    padding: 40px 200px;
+  }
+}
+
+@media (min-width: 1900px) {
+  section {
+    padding: 40px 400px;
+    background-color: #d9e7fd;
+  }
+}
+
 .section2 {
   background-color: #264fa6;
   background-image: url('@/assets/bg/blue.png');

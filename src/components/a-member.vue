@@ -24,7 +24,7 @@
       </div>
     </header>
 
-    <div class="flex px-2 gap-8">
+    <div class="flex px-2 gap-16 flex-wrap">
       <span
         class="flex flex-col justify-center items-center gap-2 avatar-wrap"
         v-for="(member, index) in members"

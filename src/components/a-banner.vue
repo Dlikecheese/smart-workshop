@@ -1,5 +1,5 @@
 <template>
-  <a-carousel arrows>
+  <a-carousel arrows autoplay="true">
     <template #prevArrow>
       <div class="custom-slick-arrow" style="left: 10px; zindex: 1">
         <left-circle-outlined />
@@ -10,9 +10,9 @@
         <right-circle-outlined />
       </div>
     </template>
-    <div><img src="@/assets/B1.png" class="w-full" /></div>
-    <div><img src="@/assets/B2.png" class="w-full" /></div>
-    <div><img src="@/assets/B3.png" class="w-full" /></div>
+    <div><img src="@/assets/banner/b1.png" class="w-full" /></div>
+    <div><img src="@/assets/banner/b2.png" class="w-full" /></div>
+    <div><img src="@/assets/banner/b3.png" class="w-full" /></div>
   </a-carousel>
 </template>
 <script setup lang="ts">

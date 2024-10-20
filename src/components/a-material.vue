@@ -11,25 +11,27 @@
       </div>
     </header>
 
-    <div class="flex justify-between gap-2">
+    <div class="flex justify-between gap-4">
       <div class="flex flex-col items-center gap-2">
-        <img src="@/assets/material/1.png" alt="" />
-        <span>智慧大棚环境监测</span>
+        <img src="@/assets/material/b1.png" alt="" />
       </div>
 
       <div class="flex flex-col items-center gap-2">
-        <img src="@/assets/material/2.png" alt="" />
-        <span>智能家居家电控制</span>
+        <img src="@/assets/material/b2.png" alt="" />
       </div>
 
       <div class="flex flex-col items-center gap-2">
-        <img src="@/assets/material/3.png" alt="" />
-        <span>智慧交通车辆监管</span>
+        <img src="@/assets/material/b3.png" alt="" />
       </div>
 
       <div class="flex flex-col items-center gap-2">
-        <img src="@/assets/material/4.png" alt="" />
-        <span>智慧仓储货物配送</span>
+        <img src="@/assets/material/b4.png" alt="" />
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <img src="@/assets/material/b5.png" alt="" />
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <img src="@/assets/material/b6.png" alt="" />
       </div>
     </div>
   </div>
@@ -37,4 +39,22 @@
 <script setup lang="ts">
 import FileSearchOutlined from '@ant-design/icons-vue/FileSearchOutlined'
 </script>
-<style scoped></style>
+<style scoped>
+@media (max-width: 2500px) {
+  img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 1400px) {
+  img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  img {
+    width: 80px;
+  }
+}
+</style>
