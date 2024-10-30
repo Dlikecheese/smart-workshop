@@ -65,6 +65,10 @@ import huang from '@/assets/person/huangxiujuan.png'
 import zhang from '@/assets/person/zhangjun.png'
 import cao from '@/assets/person/caokang.png'
 import yin from '@/assets/person/yincunju.png'
+import wanggang from '@/assets/person/wanggang.png'
+import yanglei from '@/assets/person/yanglei.png'
+import chenjing from '@/assets/person/chenjing.png'
+import liuyang from '@/assets/person/liuyang.png'
 
 const size = ref('company')
 
@@ -101,14 +105,10 @@ const onRadioChange = (event: { target: { value: string } }) => {
     ]
   } else {
     members.value = [
-      { name: '王刚', avatar: '' },
-      { name: '刘洋', avatar: '' },
-      { name: '陈静', avatar: '' },
-      { name: '杨磊', avatar: '' },
-      { name: '赵敏', avatar: '' },
-      { name: '李娜', avatar: '' },
-      { name: '张伟', avatar: '' },
-      { name: '王丽', avatar: '' },
+      { name: '王刚', avatar: wanggang },
+      { name: '刘洋', avatar: liuyang },
+      { name: '陈静', avatar: chenjing },
+      { name: '杨磊', avatar: yanglei },
     ]
   }
 }

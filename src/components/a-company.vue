@@ -52,9 +52,19 @@
 </template>
 <script setup lang="ts">
 import StarOutlined from '@ant-design/icons-vue/StarOutlined'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const onClick = () => {
-  window.open(window.location.href + 'detail?type=company')
+  //window.open(window.location.href + 'detail?type=company')
+  const routerData = router.resolve({
+    path: '/detail',
+    query: {
+      type:'company'
+    }
+  })
+  window.open(routerData.href, '_blank')
 }
 </script>
 <style scoped>

@@ -9,7 +9,7 @@
         <div class="mr-4 text-white relative -top-1">
           <!-- 默认和登录 -->
           <span class="mr-4">默认</span>
-          <span>张天天</span>
+          <span>黄老师</span>
         </div>
       </div>
     </header>
@@ -48,7 +48,7 @@
           </div>
 
           <div class="flex items-center justify-center mb-8">
-            <img src="@/assets/company/chejian.png" alt="" />
+            <img src="@/assets/company/chejianDetail.png" alt="" width="800px" />
           </div>
 
           <p class="mb-4">二、项目目标</p>
