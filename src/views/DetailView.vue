@@ -3,13 +3,16 @@
     <header class="w-full bg-blue-800">
       <div
         style="background-color: rgb(2 70 190 / 7%)"
-        class="flex justify-between items-center px-[60px] h-[60px] pr-[200px] pt-2"
+        class="flex justify-between items-center px-[60px] h-[90px] pr-[200px] pt-2"
       >
-        <img src="@/assets/logo.png" alt="" width="260px" />
-        <div class="mr-4 text-white relative -top-1">
-          <!-- 默认和登录 -->
-          <span class="mr-4">默认</span>
-          <span>黄老师</span>
+        <img src="@/assets/logo.png" alt="" width="280px" />
+        <div class="flex items-center mr-4 text-white relative -top-1">
+          <span class="mr-2">欢迎您</span>
+          <img
+            src="@/assets/person/huangxiujuan.png"
+            alt=""
+            class="cursor-pointer w-[40px] h-[40px] rounded-full ml-2"
+          />
         </div>
       </div>
     </header>
@@ -43,12 +46,16 @@
         <p class="text-center text-2xl mb-4">数字车间集控平台搭建</p>
         <div class="leading-6">
           <p class="mb-4">一、项目背景</p>
-          <div class="indent-8 mb-4">
+          <div class="indent-8 mb-4 leading-8">
             随着智能制造和工业4.0时代的到来，传统制造业正面临着前所未有的转型压力。为了提高生产效率、降低成本、增强市场竞争力，实现生产过程的数字化、网络化和智能化已成为行业共识。数字车间作为智能制造的重要组成部分，通过集成信息技术、自动化技术和智能管理技术，能够显著提升生产线的灵活性和响应速度，确保产品质量，优化资源配置。因此，搭建一个高效、可靠的数字车间集控平台，对于推动制造业转型升级具有重要意义。
           </div>
 
           <div class="flex items-center justify-center mb-8">
-            <img src="@/assets/company/chejianDetail.png" alt="" width="800px" />
+            <img
+              src="@/assets/company/chejianDetail.png"
+              alt=""
+              width="800px"
+            />
           </div>
 
           <p class="mb-4">二、项目目标</p>
@@ -158,6 +165,8 @@ p {
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { UserOutlined } from '@ant-design/icons-vue'
+
 const router = useRouter()
 const type = ref(router.currentRoute.value.query.type)
 </script>

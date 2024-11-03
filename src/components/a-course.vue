@@ -12,7 +12,7 @@
       </div>
     </header>
 
-    <div class="flex justify-between gap-2 mb-4">
+    <div class="flex justify-between gap-8 mb-4">
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/1.png" alt="" />
         <span>农业大棚</span>
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="flex justify-between gap-2">
+    <div class="flex justify-between gap-8">
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/4.png" alt="" />
         <span>仓储货物</span>

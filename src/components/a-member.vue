@@ -25,13 +25,13 @@
       </div>
     </header>
 
-    <div class="flex px-2 gap-16 flex-wrap">
+    <div class="flex px-2 gap-6 flex-wrap">
       <span
         class="flex flex-col justify-center items-center gap-2 avatar-wrap"
         v-for="(member, index) in members"
         :key="index"
       >
-        <a-avatar :size="100">
+        <a-avatar :size="100" v-if="member.type !== 'stu'">
           <template #icon>
             <UserOutlined
               v-if="!member.avatar"
@@ -46,7 +46,14 @@
             />
           </template>
         </a-avatar>
-        <span>{{ member.name }}</span>
+
+        <img
+          v-if="member.type === 'stu'"
+          :src="member.avatar"
+          alt=""
+          class="cursor-pointer w-[100px] h-[100px] rounded-full"
+          v-on:click="() => onClick(member)"
+        />
       </span>
     </div>
   </div>
@@ -65,14 +72,20 @@ import huang from '@/assets/person/huangxiujuan.png'
 import zhang from '@/assets/person/zhangjun.png'
 import cao from '@/assets/person/caokang.png'
 import yin from '@/assets/person/yincunju.png'
-import wanggang from '@/assets/person/wanggang.png'
-import yanglei from '@/assets/person/yanglei.png'
-import chenjing from '@/assets/person/chenjing.png'
-import liuyang from '@/assets/person/liuyang.png'
+import router from '@/router'
+import chy from '@/assets/person/stu/chy.jpg'
+import gqs from '@/assets/person/stu/gqs.jpg'
+import hry from '@/assets/person/stu/hry.jpg'
+import hyn from '@/assets/person/stu/hyn.jpg'
+
+import yjj from '@/assets/person/stu/jyy.jpg'
+import ljy from '@/assets/person/stu/ljy.jpg'
+import yxy from '@/assets/person/stu/yxr.jpg'
+import zjx from '@/assets/person/stu/zjx.jpg'
 
 const size = ref('company')
 
-const members = ref([
+const members: any = ref([
   { name: '马万千', avatar: p1 },
   { name: '刘天宋', avatar: p5 },
   { name: '王瑞丽', avatar: p2 },
@@ -81,7 +94,12 @@ const members = ref([
 
 const onClick = (member: { name: string }) => {
   if (member.name === '刘天宋') {
-    window.open(window.location.href + 'detail?type=person')
+    const routerData = router.resolve({
+      name: 'detail',
+      query: { type: 'person' },
+    })
+
+    window.open(routerData.href, '_blank')
   }
 }
 
@@ -105,10 +123,14 @@ const onRadioChange = (event: { target: { value: string } }) => {
     ]
   } else {
     members.value = [
-      { name: '王刚', avatar: wanggang },
-      { name: '刘洋', avatar: liuyang },
-      { name: '陈静', avatar: chenjing },
-      { name: '杨磊', avatar: yanglei },
+      { name: '王刚', avatar: chy, type: 'stu' },
+      { name: '刘洋', avatar: gqs, type: 'stu' },
+      { name: '陈静', avatar: hry, type: 'stu' },
+      { name: '杨磊', avatar: hyn, type: 'stu' },
+      { name: '杨磊', avatar: yjj, type: 'stu' },
+      { name: '杨磊', avatar: ljy, type: 'stu' },
+      { name: '杨磊', avatar: yxy, type: 'stu' },
+      { name: '杨磊', avatar: zjx, type: 'stu' },
     ]
   }
 }

@@ -12,7 +12,7 @@
       </div>
     </header>
 
-    <div class="flex justify-between gap-2">
+    <div class="flex justify-between gap-8">
       <a
         class="flex flex-col items-center gap-2 cursor-pointer"
         href="https://czlgj.fy.chaoxing.com/portal/"
