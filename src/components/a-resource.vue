@@ -19,7 +19,7 @@
         target="_blank"
       >
         <img src="@/assets/resource/1.png" alt="" />
-        <span>教学云</span>
+        <span class="text-lg">教学云</span>
       </a>
 
       <a
@@ -28,7 +28,7 @@
         target="_blank"
       >
         <img src="@/assets/resource/2.png" alt="" />
-        <span>企业云</span>
+        <span class="text-lg">企业云</span>
       </a>
 
       <a
@@ -37,7 +37,7 @@
         target="_blank"
       >
         <img src="@/assets/resource/3.png" alt="" />
-        <span>工业云</span>
+        <span class="text-lg">工业云</span>
       </a>
 
       <a
@@ -46,7 +46,7 @@
         target="_blank"
       >
         <img src="@/assets/resource/4.png" alt="" />
-        <span>工具云</span>
+        <span class="text-lg">工具云</span>
       </a>
     </div>
   </div>

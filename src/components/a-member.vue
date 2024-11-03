@@ -73,15 +73,15 @@ import zhang from '@/assets/person/zhangjun.png'
 import cao from '@/assets/person/caokang.png'
 import yin from '@/assets/person/yincunju.png'
 import router from '@/router'
-import chy from '@/assets/person/stu/chy.jpg'
-import gqs from '@/assets/person/stu/gqs.jpg'
-import hry from '@/assets/person/stu/hry.jpg'
-import hyn from '@/assets/person/stu/hyn.jpg'
+import chy from '@/assets/person/stu/chy.png'
+import gqs from '@/assets/person/stu/gqs.png'
+import hry from '@/assets/person/stu/hry.png'
+import hyn from '@/assets/person/stu/hyn.png'
 
-import yjj from '@/assets/person/stu/jyy.jpg'
-import ljy from '@/assets/person/stu/ljy.jpg'
-import yxy from '@/assets/person/stu/yxr.jpg'
-import zjx from '@/assets/person/stu/zjx.jpg'
+import yjj from '@/assets/person/stu/jyy.png'
+import ljy from '@/assets/person/stu/ljy.png'
+import yxy from '@/assets/person/stu/yxr.png'
+import zjx from '@/assets/person/stu/zjx.png'
 
 const size = ref('company')
 

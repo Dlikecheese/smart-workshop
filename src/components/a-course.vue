@@ -15,24 +15,24 @@
     <div class="flex justify-between gap-8 mb-4">
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/1.png" alt="" />
-        <span>农业大棚</span>
+        <span class="text-lg">农业大棚</span>
       </div>
 
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/2.png" alt="" />
-        <span>家居家电</span>
+        <span class="text-lg">家居家电</span>
       </div>
 
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/3.png" alt="" />
-        <span>交通车辆</span>
+        <span class="text-lg">交通车辆</span>
       </div>
     </div>
 
     <div class="flex justify-between gap-8">
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/4.png" alt="" />
-        <span>仓储货物</span>
+        <span class="text-lg">仓储货物</span>
       </div>
 
       <a
@@ -41,12 +41,12 @@
         target="_blank"
       >
         <img src="@/assets/course/5.png" alt="" />
-        <span>数字车间</span>
+        <span class="text-lg">数字车间</span>
       </a>
 
       <div class="flex flex-col items-center gap-2">
         <img src="@/assets/course/6.png" alt="" />
-        <span>智慧工厂</span>
+        <span class="text-lg">智慧工厂</span>
       </div>
     </div>
   </div>

@@ -15,24 +15,24 @@
     <div class="flex justify-between gap-8 mb-6">
       <div class="flex flex-col items-center gap-2 cursor-pointer">
         <img src="@/assets/company/1.png" alt="" />
-        <span class="text-xl">智慧大棚环境监测</span>
+        <span class="text-lg">智慧大棚环境监测</span>
       </div>
 
       <div class="flex flex-col items-center gap-2 cursor-pointer">
         <img src="@/assets/company/2.png" alt="" />
-        <span class="text-xl">智能家居家电控制</span>
+        <span class="text-lg">智能家居家电控制</span>
       </div>
 
       <div class="flex flex-col items-center gap-2 cursor-pointer">
         <img src="@/assets/company/3.png" alt="" />
-        <span class="text-xl">智慧交通车辆监管</span>
+        <span class="text-lg">智慧交通车辆监管</span>
       </div>
     </div>
 
     <div class="flex justify-between gap-8">
       <div class="flex flex-col items-center gap-2 cursor-pointer">
         <img src="@/assets/company/4.png" alt="" />
-        <span class="text-xl">智慧仓储货物配送</span>
+        <span class="text-lg">智慧仓储货物配送</span>
       </div>
 
       <div
@@ -40,12 +40,12 @@
         v-on:click="onClick"
       >
         <img src="@/assets/company/chejian.png" alt="" />
-        <span class="text-xl">数字车间集控平台搭建</span>
+        <span class="text-lg">数字车间集控平台搭建</span>
       </div>
 
       <div class="flex flex-col items-center gap-2 cursor-pointer">
         <img src="@/assets/company/gongchang.png" alt="" />
-        <span class="text-xl">智慧工厂管理平台搭建</span>
+        <span class="text-lg">智慧工厂管理平台搭建</span>
       </div>
     </div>
   </div>
