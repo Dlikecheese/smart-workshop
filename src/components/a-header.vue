@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      style="background-color: rgb(2 70 190 / 7%)"
+      style="background-color: rgb(145 145 145 / 7%)"
       class="flex justify-between items-center px-[80px] h-[60px] pr-[200px] pt-4"
     >
       <img src="@/assets/logo.png" alt="" width="250px" />

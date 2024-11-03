@@ -57,33 +57,37 @@ import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue'
 }
 
 .img {
-  height: 500px;
+  height: 250px;
   width: 100%;
   text-align: center;
-  font-size: 60px;
+  font-size: 30px;
   color: #fff;
-  line-height: 500px;
-  letter-spacing: 20px;
+  line-height: 250px;
+  letter-spacing: 10px;
   font-weight: 800;
 }
 
 .img1 {
-  background-image: url(@/assets/banner/A.jpg);
+  background-image: url(@/assets/banner/1.png);
   background-size: cover;
   background-position: 100% 100%;
   text-align: end;
 }
 
 .img2 {
-  background-image: url(@/assets/banner/B.jpg);
+  background-image: url(@/assets/banner/2.png);
   background-size: cover;
   background-position: 100% 100%;
-  line-height: 400px;
+  line-height: 250px;
+  padding-left: 100px;
+  text-align: start;
 }
 
 .img3 {
-  background-image: url(@/assets/banner/C.jpg);
+  background-image: url(@/assets/banner/3.png);
   background-size: cover;
   background-position: 100% 100%;
+  text-align: end;
+  padding-right: 100px;
 }
 </style>
