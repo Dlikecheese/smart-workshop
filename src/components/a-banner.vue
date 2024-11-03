@@ -1,5 +1,5 @@
 <template>
-  <a-carousel arrows>
+  <a-carousel arrows autoplay>
     <template #prevArrow>
       <div class="custom-slick-arrow" style="left: 10px; z-index: 1">
         <left-circle-outlined />
