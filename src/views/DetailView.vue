@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="w-full bg-blue-800">
+    <header class="w-full">
       <div
         style="background-color: rgb(2 70 190 / 7%)"
         class="flex justify-between items-center px-[60px] h-[90px] pr-[200px] pt-2"
@@ -160,6 +160,11 @@
 
 p {
   font-weight: 600;
+}
+
+header {
+  background-image: url(@/assets/detail-bg2.png);
+  background-size: cover;
 }
 </style>
 <script setup lang="ts">
