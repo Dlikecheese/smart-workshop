@@ -7,11 +7,11 @@
       >
         <img src="@/assets/logo.png" alt="" width="280px" />
         <div class="flex items-center mr-4 text-white relative -top-1">
-          <span class="mr-2">欢迎您</span>
+          <span class="mr-4 text-2xl">欢迎您</span>
           <img
             src="@/assets/person/huangxiujuan.png"
             alt=""
-            class="cursor-pointer w-[40px] h-[40px] rounded-full ml-2"
+            class="cursor-pointer w-[50px] h-[50px] rounded-full ml-2"
           />
         </div>
       </div>
@@ -165,12 +165,12 @@ p {
 header {
   background-image: url(@/assets/detail-bg2.png);
   background-size: cover;
+  background-position: center;
 }
 </style>
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { UserOutlined } from '@ant-design/icons-vue'
 
 const router = useRouter()
 const type = ref(router.currentRoute.value.query.type)

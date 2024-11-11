@@ -59,7 +59,7 @@ section {
 
 @media (min-width: 1900px) {
   section {
-    padding: 40px 400px;
+    padding: 40px 300px;
     background-color: #d9e7fd;
   }
 }

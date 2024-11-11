@@ -11,16 +11,21 @@
       </div>
     </template>
     <div class="img img1">
-      <span class="mr-4">云智启航</span> <span class="mr-10">工坊筑梦</span>
+      <div class="text-wrap">
+        <span class="mr-4 text">云智启航</span>
+        <span class="mr-10 text">工坊筑梦</span>
+      </div>
     </div>
     <div class="img img2">
       <span class="inline-block">
-        <span class="mr-4">云智工坊</span> <span>引领未来</span></span
+        <span class="mr-4 text">云智工坊</span>
+        <span class="text">引领未来</span></span
       >
     </div>
     <div class="img img3">
-      <span class="inline-block">
-        <span class="mr-4">产教联合</span> <span>共育新才</span>
+      <span class="inline-block text-wrap">
+        <span class="mr-4 text">产教联合</span>
+        <span class="text">共育新才</span>
       </span>
     </div>
   </a-carousel>
@@ -57,27 +62,31 @@ import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue'
 }
 
 .img {
-  height: 250px;
+  /* height: 250px; */
   width: 100%;
   text-align: center;
   font-size: 30px;
   color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+.text {
+  font-family: 'YouSheTitleBlack', sans-serif;
+  font-size: 50px;
+  letter-spacing: 6px;
   line-height: 250px;
-  letter-spacing: 10px;
-  font-weight: 800;
+}
+
+.text-wrap {
+  margin-left: 65%;
 }
 
 .img1 {
   background-image: url(@/assets/banner/1.png);
-  background-size: cover;
-  background-position: 100% 100%;
-  text-align: end;
 }
 
 .img2 {
   background-image: url(@/assets/banner/2.png);
-  background-size: cover;
-  background-position: 100% 100%;
   line-height: 250px;
   padding-left: 100px;
   text-align: start;
@@ -85,8 +94,6 @@ import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue'
 
 .img3 {
   background-image: url(@/assets/banner/3.png);
-  background-size: cover;
-  background-position: 100% 100%;
   text-align: end;
   padding-right: 100px;
 }

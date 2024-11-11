@@ -25,13 +25,13 @@
       </div>
     </header>
 
-    <div class="flex px-2 gap-6 flex-wrap">
+    <div class="flex px-2 gap-10 flex-wrap">
       <span
-        class="flex flex-col justify-center items-center gap-2 avatar-wrap"
+        class="flex flex-col justify-center items-center gap-6 avatar-wrap"
         v-for="(member, index) in members"
         :key="index"
       >
-        <a-avatar :size="100" v-if="member.type !== 'stu'">
+        <a-avatar :size="150" v-if="member.type !== 'stu'">
           <template #icon>
             <UserOutlined
               v-if="!member.avatar"
@@ -51,7 +51,7 @@
           v-if="member.type === 'stu'"
           :src="member.avatar"
           alt=""
-          class="cursor-pointer w-[100px] h-[100px] rounded-full"
+          class="cursor-pointer w-[150px] h-[150px] rounded-full"
           v-on:click="() => onClick(member)"
         />
       </span>
@@ -129,8 +129,6 @@ const onRadioChange = (event: { target: { value: string } }) => {
       { name: '杨磊', avatar: hyn, type: 'stu' },
       { name: '杨磊', avatar: yjj, type: 'stu' },
       { name: '杨磊', avatar: ljy, type: 'stu' },
-      { name: '杨磊', avatar: yxy, type: 'stu' },
-      { name: '杨磊', avatar: zjx, type: 'stu' },
     ]
   }
 }
