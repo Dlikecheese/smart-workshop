@@ -11,10 +11,8 @@
       </div>
     </template>
     <div class="img img1">
-      <div class="text-wrap">
-        <span class="mr-4 text">云智启航</span>
-        <span class="mr-10 text">工坊筑梦</span>
-      </div>
+      <span class="mr-[700px] text">云智启航</span>
+      <span class="text">工坊筑梦</span>
     </div>
     <div class="img img2">
       <span class="inline-block">
@@ -23,10 +21,8 @@
       >
     </div>
     <div class="img img3">
-      <span class="inline-block text-wrap">
-        <span class="mr-4 text">产教联合</span>
-        <span class="text">共育新才</span>
-      </span>
+      <span class="mr-[700px] text">产教联合</span>
+      <span class="text">共育新才</span>
     </div>
   </a-carousel>
 </template>
@@ -83,6 +79,7 @@ import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue'
 
 .img1 {
   background-image: url(@/assets/banner/1.png);
+  display: flex;
 }
 
 .img2 {
@@ -94,7 +91,6 @@ import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue'
 
 .img3 {
   background-image: url(@/assets/banner/3.png);
-  text-align: end;
-  padding-right: 100px;
+  display: flex;
 }
 </style>
