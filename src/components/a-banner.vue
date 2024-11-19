@@ -10,20 +10,9 @@
         <right-circle-outlined />
       </div>
     </template>
-    <div class="img img1">
-      <span class="mr-[700px] text">云智启航</span>
-      <span class="text">工坊筑梦</span>
-    </div>
-    <div class="img img2">
-      <span class="inline-block">
-        <span class="mr-4 text">云智工坊</span>
-        <span class="text">引领未来</span></span
-      >
-    </div>
-    <div class="img img3">
-      <span class="mr-[700px] text">产教联合</span>
-      <span class="text">共育新才</span>
-    </div>
+    <img src="@/assets/banner/A1.jpg" alt="" />
+    <img src="@/assets/banner/A2.jpg" alt="" />
+    <img src="@/assets/banner/A3.jpg" alt="" />
   </a-carousel>
 </template>
 <script setup lang="ts">
@@ -75,22 +64,5 @@ import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons-vue'
 
 .text-wrap {
   margin-left: 65%;
-}
-
-.img1 {
-  background-image: url(@/assets/banner/1.png);
-  display: flex;
-}
-
-.img2 {
-  background-image: url(@/assets/banner/2.png);
-  line-height: 250px;
-  padding-left: 100px;
-  text-align: start;
-}
-
-.img3 {
-  background-image: url(@/assets/banner/3.png);
-  display: flex;
 }
 </style>
